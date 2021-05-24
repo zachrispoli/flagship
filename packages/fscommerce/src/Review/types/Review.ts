@@ -1,6 +1,7 @@
 import { Image } from '../../Commerce/types/Image';
 import { ReviewMetadata } from './ReviewMetadata';
 import { ReviewContext } from './ReviewContext';
+import { ReviewTagDimensions } from './ReviewTagDimensions';
 import { ReviewDimension } from './ReviewDimension';
 
 /**
@@ -21,6 +22,11 @@ export interface Review extends ReviewMetadata {
    * Contexts for the review
    */
   context?: ReviewContext[];
+
+  /**
+   * Tag Dimensions for the review
+   */
+  tagDimensions?: ReviewTagDimensions[];
 
   /**
    * Dimensions for the review
